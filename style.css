@@ -1,0 +1,343 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+body {
+    color: #010928;
+    background: #d7dffe;
+    font-family: 'Montserrat', sans-serif;
+}
+/*^^^ Обнуление страницы ^^^*/
+
+.but-primary {
+    background: #0636f4;
+    color: #d7dffe;
+    padding: 10px 25px;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+}
+.but-primary:hover {
+    box-shadow: 0 10px 50px #0636f4;
+    transform: translateY(-5px);
+}
+.logo {
+    font-size: 30px;
+    color: #000e46;
+    margin-bottom: 20px;
+}
+.logo span {
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.header{
+    height: 100%;
+    width: 200px;
+    z-index: 100;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: #b7bed8;
+    transition: all .2s ease-in-out;
+    transform: translate(-150px);
+}
+.header:hover {
+    transform: translate(0px)
+}
+.header_nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 50px;
+}
+.header_nav__a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    transition: all .2s ease-in-out;
+}
+.header_nav__a a {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    width: 100%;
+    align-items: center;
+}
+.header_nav__a img {
+    transform: translateY(0);
+}
+.header_nav__a span {
+    font-size: 0;
+}
+.header_nav__a:hover {
+    font-style: 20px;
+}
+.header_nav__a img{
+    padding: 3px;
+    transition: all .1s ease-in-out;
+}
+.header_nav__a:hover {
+    border-radius: 50px;
+    background: #b7bed8;
+    box-shadow: inset 20px 20px 60px #9ca2b8,
+            inset -20px -20px 60px #d2dbf8;
+}
+.header_nav__a:hover .header_nav__a a {
+    color: #010928;
+}
+
+.main {
+    padding-bottom: 12vh;
+}
+
+.main_content__block {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+}   
+.main_content__img_block {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/img/30164-probel-tehnologii-netbuk-elektronnoe_ustrojstvo-tehnicheskaya_podderzhka-x750.jpg);
+    box-shadow:  20px 20px 60px #b7bed8,
+        -20px -20px 60px #f7ffff;
+}
+.main_content__text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.main_content__text h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.block__img {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 10px solid #d7dffe;
+    transition: all .2s ease-in-out;
+    position: absolute;
+    left: 50%;
+    bottom: -70px;
+    transform: translate(-50%, 0);
+}
+#img_partfolio{
+    width: 100%;
+    transition: all .2s ease-in-out;
+}
+.block__img:hover {
+    box-shadow: 0 10px 30px #d7dffe;
+}
+.block__img:hover #img_partfolio {
+    transform: scale(1.2);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+h2 {
+    font-size: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contacts_info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contacts_into__card {
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    background: linear-gradient(145deg, #c2c9e5, #e6efff);
+box-shadow:  20px 20px 60px #b7bed8,
+             -20px -20px 60px #f7ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .3s ease-in-out;
+}
+.contacts_into__card h2 {
+    font-size:max(20px, 0.5vw);
+    font-weight: 700;
+}
+.contacts_into__card p {
+    font-size:max(12px, 0.5vw);
+}
+.contacts_into__card:hover {
+    scale: 1.1;
+    background: linear-gradient(145deg, #c2c9e5, #e6efff);
+box-shadow:  35px 35px 70px #8e93a8,
+             -35px -35px 70px #ffffff;
+}
+
+.contacts_form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.input_group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+} 
+.input_group input,.input_group textarea {
+    width: 100%;
+    height: auto;
+    border: 1px solid #010928;
+    border-radius: 20px;
+    padding: 5px 10px;
+    max-height: 40vh;
+}
+.input_group input:focus {
+    border: 1px solid #0636f4;
+    box-shadow:  35px 35px 71px #b7bed8,
+             -35px -35px 71px #f7ffff;
+}
+.input_group textarea:focus {
+    border: 1px solid #0636f4;
+    box-shadow:  35px 35px 71px #b7bed8,
+             -35px -35px 71px #f7ffff;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+.projects_card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.projects_card__h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.projects_card__h2 span {
+    font-size: 15px;
+}
+.projects_img {
+    display: flex;
+    height: 40vh;
+    gap: 10px;
+}
+.projects_img div {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+.projects_img div img {
+    height: 100%;
+    object-fit: cover; 
+    transition: .5s;
+}
+.projects_img div:hover {
+    flex: 3;
+}
