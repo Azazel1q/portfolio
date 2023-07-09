@@ -64,46 +64,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="projects_card">
-                    <h2 class="projects_card__h2">Фабрика Лестниц<span>Сайт лендинг для комании по продаже лестниц</span></h2>
-                    <div class="projects_img">
-                        <div>
-                            <img src="/img/project2/1.webp" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project2/2.webp" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project2/3.webp" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project2/4.webp" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project2/5.webp" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="projects_card">
-                    <h2 class="projects_card__h2">Hijouni Oi Shii <span>Групповой проект. Сайт для ресторана японской кухни</span></h2>
-                    <div class="projects_img">
-                        <div>
-                            <img src="/img/project3/1.png" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project3/2.png" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project3/3.png" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project3/4.png" alt="">
-                        </div>
-                        <div>
-                            <img src="/img/project3/5.png" alt="">
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
